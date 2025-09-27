@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NavDrawerFragApp">
         <activity
-            android:name=".TabItemActivity"
+            android:name=".CardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppBarActivity"
             android:exported="false" />
         <activity
             android:name=".TabLayoutActivity"
