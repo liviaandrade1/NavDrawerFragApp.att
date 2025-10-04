@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        MaterialToolbar toolbar = findViewById(R.id.idTopAppBar);
+        MaterialToolbar toolbar = findViewById(R.id.tablayout);
         DrawerLayout drawerLayout = findViewById(R.id.main);
-        NavigationView navigationView = findViewById(R.id.navigation_view);
+        NavigationView navigationView = findViewById(R.id.topAppBar);
 
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     private void carregaFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.framelayout, fragment);
+        fragmentTransaction.replace(R.id.tablayout, fragment);
         fragmentTransaction.commit();
     }
 }

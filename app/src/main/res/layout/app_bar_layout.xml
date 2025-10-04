@@ -17,8 +17,8 @@
             android:layout_height="wrap_content"
             android:minHeight="?attr/actionBarSize"
             app:title="ola"
-            app:menu=""
-            app:navigationIcon="" />
+            app:menu="@menu/menu_bottomnav"
+            app:navigationIcon="@drawable/baseline_local_florist" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
